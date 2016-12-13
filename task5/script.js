@@ -28,8 +28,10 @@ console.log(typeof(t3));
 // Task - 4
 
 function e(b){
-	return b;
-} 
+	
+     return function() {return b;};
+}
+ 
 var t4 = e(123);
 console.log(t4);
 console.log(typeof (t4));
@@ -38,7 +40,7 @@ console.log(typeof (t4));
 
 function array (El, numOfEl){
 	var arr = [];
-	for(var i = 0; i<=numOfEl; i++){
+	for(var i = 0; i<numOfEl; i++){
 		arr[i]=El;
 	}
 	return arr
@@ -68,8 +70,10 @@ function h(foo) {
 
 //Task - 8
 
-var result = 0;
+
+
 function j(array) {
+	var result = 0;
 	for (var i = 0; i < array.length; i++){
 		result = result + array[i];
 	}
@@ -78,6 +82,7 @@ function j(array) {
 var arr = j([2,4,6])
 console.log(arr)
 console.log(typeof(arr))
+
 
 //Task - 9
 
